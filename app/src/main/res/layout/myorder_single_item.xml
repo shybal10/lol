@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_marginBottom="3dp">
+    
+    <View  android:id="@+id/view"
+           android:layout_width="fill_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="5dp"
+           android:background="@drawable/dividergray"/>
+
+    <Button
+        android:id="@+id/buttonreload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/reorder" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        android:layout_marginLeft="3dp"
+        android:text="Order No:" />
+
+    <TextView
+        android:id="@+id/textView2orderid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="djf"
+        style="@style/autoscrollText"
+        android:textColor="#ff0000" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="@drawable/red_divider"/>
+
+    <TextView
+        android:id="@+id/textVieworderdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/button2"
+        android:textColor="#000"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonreload"
+        android:layout_alignLeft="@+id/textVieworderdate"
+        android:text="TextView"
+        android:textColor="#000" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2orderid"
+        android:layout_alignLeft="@+id/textViewamount" >
+        
+        <TextView
+            android:id="@+id/textViewstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2orderid"
+            android:layout_toRightOf="@+id/button2"
+            android:text="TextView"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/txtStatusValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2orderid"
+            android:layout_toRightOf="@+id/button2"
+            android:text="TextView"
+            android:textColor="#000" />
+    </TableRow>
+
+</RelativeLayout>

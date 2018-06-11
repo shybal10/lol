@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    <RelativeLayout android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+	    <Button
+	        android:layout_width="fill_parent"
+	          android:layout_height="1dp"
+	          android:background="@drawable/dividergray"
+	          android:layout_marginTop="20dp"/>
+	    
+	    <Button
+		        android:id="@+id/button1editaddress"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginTop="12dp"
+		        android:background="@drawable/editbtn_ar"
+		        android:layout_marginLeft="10dp"/>
+
+	     <TextView
+	        android:id="@+id/textView1add1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="visible"
+	        android:textColor="#000"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginLeft="75dp"
+	        android:gravity="right"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+  </RelativeLayout>
+
+  
+    <TextView
+        android:id="@+id/textView2add2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3add3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView4add4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:visibility="visible"
+       android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:layout_marginRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView5add5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textColor="#000"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>

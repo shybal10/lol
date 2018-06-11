@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/panel_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <!-- <com.etsy.android.grid.util.DynamicHeightImageView
+        android:id="@+id/txt_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" /> -->
+        
+        <ImageView
+        android:id="@+id/txt_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+    
+    <LinearLayout  android:id="@+id/linearlayoutstraggered"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:gravity="center" 
+            android:background="@drawable/transbg_withclose">
+	
+	   <TableRow
+	       android:id="@+id/tableRowonclickview"
+	       android:layout_width="fill_parent"
+	       android:layout_height="100dp"
+	       android:gravity="center" 
+	       android:layout_weight="1">
+	
+	            <Button
+	                android:id="@+id/buttongo"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/details" />
+	        </TableRow>
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1descriptionstyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt_line1"
+        android:layout_marginTop="1dp"
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
+
+ 

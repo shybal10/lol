@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpagerProdImgDialog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/indicator"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+        </android.support.v4.view.ViewPager>
+
+        <com.dairam.android.fragments.activity.viewpager.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="2dp"
+            android:layout_marginBottom="22dp"
+            android:padding="10dip"
+            app:fillColor="#FFFFFF"
+            app:pageColor="#0c0556"
+            app:radius="4dp"
+            app:strokeColor="#FF000000"
+            app:strokeWidth="3dp" />
+
+        <ImageButton
+            android:id="@+id/imageBtnProdDialogClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/viewpagerProdImgDialog"
+            android:background="@null"
+            android:src="@drawable/close_prod_dialog" />
+
+    </RelativeLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_weight="1" 
+        android:orientation="vertical">
+
+        <com.dairam.viewpager.AutoScrollViewPager
+            android:id="@+id/pagerSubImgsDialogProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff" />
+
+        
+    </LinearLayout>
+    -->
+
+</LinearLayout>

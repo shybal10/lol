@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dairam</string>
+    <string name="login">LOGIN TO YOUR ACCOUNT</string>
+    <string name="contactintro">Whether you have any questions, comments or you would like to keep in touch,just drop a line using the form below, we would love to connect with you.</string>
+    <string name="prompt">Subject</string>
+    <string name="promptcountry">Country</string>
+    <string name="promptcity">City</string>
+    <string name="delivery_details">Please enter your product delivery details</string>
+
+    <string name="rating_title">Rate application</string>
+    <string name="rating_msg">Please, rate the app at Play Store</string>
+
+    <string name="regular_typeface">fonts/HELVETICANEUELTARABIC-ROMAN.TTF</string>
+
+    <string-array name="More">
+        <item>Language</item>
+        <item>Country</item>
+        <item>My Account</item>
+        <item>Social Media Accounts</item>
+        <item>Newsletter sign up</item>
+        <item>Shipping policy</item>
+        <item>Terms and conditions</item>
+        <item>Customer care</item>
+
+    </string-array>
+
+
+    <string-array name="contact_arrays">
+        <item>General Information</item>
+        <item>Order Status</item>
+        <item>Problems with my order</item>
+        <item>My Account</item>
+        <item>Wholesale Inquiries</item>
+        <item>Website / technical inquiries</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string name="Woman">Women</string>
+    <string name="Woman_Sale">Women </string>
+    <string name="Man">Men</string>
+    <string name="Man_Sale">Men</string>
+    <string name="Kids">Kids</string>
+    <string name="Kids_Sale">Kids  </string>
+
+
+    <string name="forgetlogin">Forget password</string>
+    <string name="app_id">1474562186130845</string>
+
+    <string name="facebook_app_id">231104557449360</string>
+
+
+
+    <string name="registerheader">REGISTER YOUR ACCOUNT</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="email">Email</string>
+    <string name="telephone">Telephone</string>
+    <string name="password">Password</string>
+    <string name="reenter">Re-enter password</string>
+    <string name="agree_terms">   I Agree to the terms and conditions</string>
+
+    <string name="price_">Price</string>
+
+    <string-array name="popuparray">
+        <item>Standard order</item>
+        <item>Sort by newest</item>
+        <item>Sort by popularity</item>
+        <item>Sort by random</item>
+    </string-array>
+    <string name="emailsignup">Enter email address</string>
+    <string name="myaccoutnedit">Edit Account Information</string>
+    <string name="myaccoutnorders">My Orders</string>
+    <string name="myaccountaddressbook">My Address Book</string>
+    <string name="myaccountheader">MY PROFILE</string>
+    <string name="editinfoheading">EDIT ACCOUNT INFORMATION</string>
+    <string name="editaddressbook">EDIT ADDRESS BOOK</string>
+    <string name="adressbookheader">MY ADDRESS BOOK</string>
+    <string name="ordertotal">ORDER TOTAL:</string>
+    <string name="discountcode">Enter discount code</string>
+
+    <string name="address1">Address 1</string>
+    <string name="mobilenumber">Mobile Number </string>
+    <string name="pincode_opt">PostCode(Optional) </string>
+    <string name="address2_opt">Address 2(Optional)</string>
+
+    <string name="checkout">CHECKOUT </string>
+
+
+    <string name="loginstring">SIGN IN</string>
+
+    <string name="knetpayment">KNET PAYMENT</string>
+    <string name="termsandconditions">TERMS AND CONDITIONS</string>
+    <string name="shippingpolicy">SHIPPING POLICY</string>
+    <string name="sale">SALE</string>
+    <string name="contact">CONTACT</string>
+
+    <string name="styles">STYLE</string>
+
+    <string name="register"> REGISTER </string>
+
+    <string name="noitem_wishlist"> No items added to the wishlist yet</string>
+    <string name="noitem_cart">No items added to the cart yet</string>
+    <string name="noitem_cartegories">No items are available in this category now, please come back soon to check for new items</string>
+
+
+    <string name="facebook"> Facebook </string>
+    <string name="twitter">  Twitter  </string>
+    <string name="instagram"> Instagram </string>
+    <string name="pinterest"> Pinterest </string>
+    <string name="gplus"> Google+ </string>
+
+    <string name="facebook_social"> Facebook </string>
+    <string name="twitter_social">  Twitter  </string>
+    <string name="instagram_social"> Instagram </string>
+    <string name="pinterest_social"> Pinterest </string>
+
+    <string name="updating_twitter">Updating to twitter&#8230;</string>
+    <string name="status_updated_twitter">Status tweeted successfully</string>
+    <string name="twtr_share_size_exceeds">Description size exceeds,  please reduce</string>
+    <string name="twitter_package">com.twitter.android</string>
+    <string name="no_twitter">Twitter Application not found</string>
+    <string name="inst_package">com.instagram.android</string>
+    <string name="no_image">couldn\'t find the image</string>
+    <string name="no_instagram">Instagram Application not found</string>
+
+    <string name="english_language">English</string>
+    <string name="arabic_language">عربي</string>
+
+    <string name="success_message">Your message has been sent successfully. We will be in touch with you soon</string>
+
+    <string name="cartsubtotal">Cart Subtotal :</string>
+    <string name="specialpromodisc">Special Promotions Discount :</string>
+
+    <string name="error_in_additem">Error in Adding Item</string>
+    <string name="fill_all_fields">Please fill All the fields </string>
+    <string name="enter_valid_phone">Please Enter a valid Phone number</string>
+    <string name="enter_valid_email">Please enter a Valid Email Id </string>
+    <string name="enter_valid_uname">Please Enter a Valid Email Address in UserName Field </string>
+    <string name="login_failed">Failed to Login </string>
+    <string name="must_login">You must Sign in. </string>
+
+    <string name="item_added_wishlist">One item added to Wishlist  </string>
+
+
+    <string name="required_shipping_address">Shipping Address Required</string>
+    <string name="password_mismatch">Password Mismatch Occured</string>
+    <string name="accept_terms">Please Select Terms and Conditions</string>
+
+    <string name="charecters">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+
+    <string name="no_response">No Response from Server. Please Try again</string>
+    <string name="no_response_currency">Not get the Currencies from Server. Default is KD</string>
+    <string name="no_countries">No Countries available. Please Try again</string>
+    <string name="no_zones">No Zones available. Please Try again</string>
+
+
+    <string name="newslettersignup">NEWSLETTER SIGNUP</string>
+    <string name="readterms">Read Terms and Conditions</string>
+    <string name="title_activity_rating">Rating Dairam</string>
+
+</resources>

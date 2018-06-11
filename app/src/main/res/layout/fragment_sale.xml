@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp">
+    
+     <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dairam_header2" >
+
+        <Button
+            android:id="@+id/buttonbacksale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" 
+            android:layout_gravity="left|center_vertical"                       
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/textViewbacksale"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:textDirection="ltr"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/sale"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff" />
+        
+        <Button
+            android:id="@+id/buttonbacksaleInvisble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="right|center_vertical"                       
+            android:background="@drawable/back_arrow" />
+
+    </LinearLayout>
+    
+    <!-- <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dairam_header2"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/buttonbacksale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/textViewbacksale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sale"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:layout_marginLeft="6dp"
+            android:textSize="20sp" />
+    </TableRow> -->
+    <LinearLayout android:id="@+id/linearlay1"
+        		  android:layout_width="fill_parent"
+        		  android:layout_height="wrap_content"
+        		  android:orientation="horizontal"
+        		  android:layout_marginTop="10dp"
+        		  android:layout_marginLeft="5dp"
+        		  android:layout_marginRight="5dp"
+        		  android:layout_weight="1"
+        		 >
+        		  <RelativeLayout android:id="@+id/relativelaywoman"
+        		                  android:layout_height="wrap_content"
+        		                  android:layout_width="wrap_content"
+        		                  android:layout_weight="1"
+        		                  android:layout_marginRight="5dp">
+        		           <ImageView android:id="@+id/imageviewwoman"
+        		                      android:layout_height="fill_parent"
+        		                      android:layout_width="fill_parent"
+        		                      android:scaleType="centerCrop"
+        		                      android:src="@drawable/loading320"
+        		                      />
+
+        		           <TextView
+        		               android:id="@+id/textView1"
+        		               android:layout_width="fill_parent"
+        		               android:layout_height="70dp"
+        		               android:layout_alignParentBottom="true"
+        		               android:layout_alignParentLeft="true"
+        		               android:gravity="center"
+        		               android:textColor="#fff"
+        		               android:textSize="20dp"
+        		               android:background="@drawable/textbg_sale"
+        		               android:text="@string/Woman" />
+
+        		  </RelativeLayout>
+        		  
+        		  <RelativeLayout android:id="@+id/relativelaymen"
+        		                  android:layout_height="wrap_content"
+        		                  android:layout_width="wrap_content"
+        		                  android:layout_weight="1"
+        		                  android:layout_marginLeft="5dp">
+        		         <ImageView android:id="@+id/imageviewmen"
+        		                      android:layout_height="fill_parent"
+        		                      android:layout_width="fill_parent"
+        		                      android:scaleType="centerCrop"
+        		                      android:src="@drawable/loading320"
+        		                      />
+        		         <TextView
+        		               android:id="@+id/textViewmen"
+        		               android:layout_width="fill_parent"
+        		               android:layout_height="70dp"
+        		               android:layout_alignParentBottom="true"
+        		               android:layout_alignParentLeft="true"
+        		               android:gravity="center"
+        		               android:textColor="#fff"
+        		               android:textSize="20dp"
+        		               android:background="@drawable/textbg_sale"
+        		               android:text="@string/Man" />
+        		  </RelativeLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/linearlay2"
+        		  android:layout_width="fill_parent"
+        		  android:layout_height="wrap_content"
+        		  android:orientation="horizontal"
+        		  android:layout_marginTop="5dp"
+        		  android:layout_marginLeft="5dp"
+        		  android:layout_marginRight="5dp"
+        		  android:layout_weight="1">
+        		  
+         <RelativeLayout android:id="@+id/relativelaykids"
+        		                  android:layout_height="wrap_content"
+        		                  android:layout_width="wrap_content"
+        		                  android:layout_weight="1"
+        		                  android:layout_marginTop="5dp"
+        		                  android:layout_marginRight="5dp">
+        		           <ImageView android:id="@+id/imageviekids"
+        		                      android:layout_height="fill_parent"
+        		                      android:layout_width="fill_parent"
+        		                      android:scaleType="centerCrop"
+        		                      android:src="@drawable/loading320"/>
+        		           <TextView
+        		               android:id="@+id/textViewkids"
+        		               android:layout_width="fill_parent"
+        		               android:layout_height="70dp"
+        		               android:layout_alignParentBottom="true"
+        		               android:layout_alignParentLeft="true"
+        		               android:gravity="center"
+        		               android:textColor="#fff"
+        		               android:textSize="20dp"
+        		               android:background="@drawable/textbg_sale"
+        		               android:text="@string/Kids" />
+        		  </RelativeLayout>
+        		  
+        		  
+        		  <RelativeLayout android:id="@+id/relativelaysale"
+        		                  android:layout_height="wrap_content"
+        		                  android:layout_width="wrap_content"
+        		                  android:layout_weight="1"
+        		                  android:layout_marginTop="5dp"
+        		                  android:layout_marginLeft="5dp">
+        		         <ImageView android:id="@+id/imagevieall"
+        		                      android:layout_height="fill_parent"
+        		                      android:layout_width="fill_parent"
+        		                      android:scaleType="centerCrop"
+        		                      android:src="@drawable/loading320"
+        		                      />
+        		  </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

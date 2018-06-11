@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray_menu">#6f767f</color>
+    <color name="red_dairam">#cf2b25</color>
+    
+    <color name="gray_cartqty">#545658</color>
+    
+    <color name="transparent">#00000000</color>
+    
+    
+    <color name="pending_orange">#FFBF430A</color>
+
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+        <TextView
+        android:id="@+id/textView1carttotal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listView1cartitem"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="right"
+        android:text="@string/carttotal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:typeface="serif"
+        android:visibility="visible" />
+    -->
+
+    <EditText
+        android:id="@+id/editTextdiscountcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1carttotal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_small"
+        android:ems="10"
+        android:gravity="right|center"
+        android:hint="@string/discountcode"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:typeface="serif" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lblSplPromoLabelCartValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="left|center_vertical"
+            android:text="0.000 KD"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textDirection="rtl"
+            style="@style/autoscrollText" />
+
+        <TextView
+            android:id="@+id/lblSplPromoLabelCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textDirection="rtl"
+            android:gravity="left|center_vertical"
+            android:text="@string/specialpromodisc"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lblcartSubtotalLabelCartValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="left|center_vertical"
+            android:textDirection="rtl"
+            android:text="0.000 KD"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/lblcartSubtotalLabelCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textDirection="rtl"
+            android:gravity="left|center_vertical"
+            android:text="@string/cartsubtotal"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <!--
+         <Spinner
+        android:id="@+id/spinner1cart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextdiscountcode"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/spinner"
+        android:dropDownVerticalOffset="5dp"
+        android:paddingRight="60dp"
+        android:prompt="@string/country" />
+    -->
+
+</LinearLayout>

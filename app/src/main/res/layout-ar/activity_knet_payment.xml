@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/tableRow1knet"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dairam_header2"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/buttonbacktermsknetInvible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:background="@drawable/back_arrowar" />
+
+        <TextView
+            android:id="@+id/textViewbacktermsknet"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/knetpayment"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textDirection="rtl"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/buttonbacktermsknet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/back_arrowar" />
+    </LinearLayout>
+    
+    <!-- <TableRow
+        android:id="@+id/tableRow1knet"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical|right"
+        android:background="@drawable/dairam_header2" >
+        
+        
+        <TextView
+            android:id="@+id/textViewbacktermsknet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/knetpayment"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:lines="1"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/buttonbacktermsknet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/back_arrowar"
+            android:layout_marginRight="5dp" />
+
+
+    </TableRow> -->
+<!-- 
+    <ScrollView
+        android:id="@+id/scrollView1knet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"> -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            
+        <WebView
+		            android:id="@+id/webviewknet"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent" 
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginRight="5dp"
+		            android:textColor="#000"/>
+                
+            
+        </LinearLayout>
+   <!--  </ScrollView> -->
+
+</LinearLayout>

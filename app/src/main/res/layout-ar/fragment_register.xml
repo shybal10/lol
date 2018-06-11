@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tableRow1back"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dairam_header2"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonbackregisterInvible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrowar"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textViewbackregister"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/register"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textDirection="rtl"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/buttonbackregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/back_arrowar" />
+    </LinearLayout>
+
+    <!--
+    <TableRow
+        android:id="@+id/tableRow1back"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical|right"
+        android:background="@drawable/dairam_header2" >
+        
+        <TextView
+            android:id="@+id/textViewbackregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textColor="#fff"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/buttonbackregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrowar" 
+            android:layout_marginRight="3dp"/>
+
+
+    </TableRow>
+
+
+    -->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/registerheader"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#b7babf" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <EditText
+                    android:id="@+id/edittextnamereg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_small"
+                    android:textDirection="rtl"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/firstname"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowlastname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <EditText
+                    android:id="@+id/edittextlastnamereg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_small"
+                    android:textDirection="rtl"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/lastname"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowemail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <EditText
+                    android:id="@+id/edittextemailreg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_small"
+                    android:hint="@string/email"
+                    android:textDirection="rtl"
+                    android:gravity="right|center_vertical"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowtelephone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <EditText
+                    android:id="@+id/edittexttelephonereg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_small"
+                    android:hint="@string/telephone"   
+                    android:textDirection="rtl"
+                    android:gravity="right|center_vertical"                 
+                    android:inputType="phone"
+                    android:maxLength="13"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <EditText
+                    android:id="@+id/edittextpasswordreg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_small"
+                    android:gravity="right"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:layoutDirection="rtl"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowrepassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <EditText
+                    android:id="@+id/edittextrepasswordreg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_small"
+                    android:gravity="right"
+                    android:hint="@string/reenter"
+                    android:inputType="textPassword"
+                    android:layoutDirection="rtl"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/tableRowreagreepolicy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:id="@+id/tableRowpasswordd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp" 
+                    android:layout_gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textviewlabelcheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="أوافق على البنود والشروط" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1reg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selctor_checkbox"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textDirection="rtl"
+                        android:rotationY="180" />
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/lblReadTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" 
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <TableRow
+                android:id="@+id/tableRowsubmit"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="25dp"
+                android:background="#F6F7F9"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/buttonsubmitreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/signup_btn_ar" />
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

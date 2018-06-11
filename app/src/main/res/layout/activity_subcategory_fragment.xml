@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+     <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dairam_header2" >
+
+        <Button
+            android:id="@+id/buttonbackcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" 
+            android:layout_gravity="left|center_vertical"                       
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/textViewbackcat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:textDirection="ltr"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff" />
+        
+        <Button
+            android:id="@+id/buttonbackcatInvisble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="right|center_vertical"                       
+            android:background="@drawable/back_arrow" />
+
+    </LinearLayout>
+    
+    <!-- <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dairam_header2"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/buttonbackcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/textViewbackcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textSize="20sp" 
+            android:layout_marginLeft="5dp"/>
+    </TableRow> -->
+    
+    <TextView  android:id="@+id/errortext"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_marginLeft="5dp"
+               android:gravity="left"
+               android:textColor="#e51521"
+               android:text="@string/noitem_cartegories"/>
+
+    <ListView
+        android:id="@+id/listViewsubcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

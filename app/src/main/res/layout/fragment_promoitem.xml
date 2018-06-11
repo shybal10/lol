@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linlaypromo"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/linearlayoutheaderpromo"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/dairam_header2">
+
+        <Button
+            android:id="@+id/buttonbackhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" 
+            android:layout_gravity="left|center_vertical"  
+            android:background="@drawable/back_arrow"/>
+
+        <!-- 
+	        <RelativeLayout  
+		        android:layout_width="fill_parent"
+		        android:layout_height="80dp"> -->
+
+			        <TextView
+			            android:id="@+id/textviewheader"
+			            android:layout_width="0dp"
+			            android:layout_weight="1"
+			            android:layout_height="80dp"
+			            android:textDirection="ltr"
+            			android:gravity="center_horizontal|center_vertical"
+			            android:lines="1"
+			            android:textAppearance="?android:attr/textAppearanceLarge"
+			            android:textColor="#fff" />
+			
+			        <Button
+			            android:id="@+id/buttonsort"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+            			android:layout_gravity="right|bottom"  
+			            android:layout_marginBottom="5dp"
+			            android:layout_marginRight="7dp"
+			            android:background="@drawable/sorticon" />
+			         <!-- </RelativeLayout> -->
+    </LinearLayout>
+
+    <!-- <LinearLayout
+        android:id="@+id/linearlayoutheaderpromo"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/dairam_header2">
+
+        <Button
+            android:id="@+id/buttonbackhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow"
+            android:layout_marginLeft="5dp"/>
+
+        
+	        <RelativeLayout  
+		        android:layout_width="fill_parent"
+		        android:layout_height="80dp">
+			        <TextView
+			            android:id="@+id/textviewheader"
+			            android:layout_width="wrap_content"
+			            android:layout_height="80dp"
+			            android:textColor="#fff"
+			            android:layout_marginLeft="5dp"
+			            android:gravity="center"
+			            android:typeface="serif"
+			            android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+			        <Button
+			            android:id="@+id/buttonsort"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_marginTop="25dp"
+			            android:layout_marginRight="15dp"
+			            android:background="@drawable/sorticon" />
+			         </RelativeLayout>
+    </LinearLayout> -->
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+			        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/price_"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+            
+    
+    <LinearLayout
+        android:id="@+id/mylayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+			        
+        
+
+      <!--   <com.edmodo.rangebar.RangeBar
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rangebar1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            custom:tickCount="7" /> -->
+    </LinearLayout> 
+    </LinearLayout> 
+    
+       <View  android:id="@+id/dividerview"
+              android:layout_width="fill_parent"
+              android:layout_height="1dp"
+              android:background="@drawable/dividergray"/>
+       
+       <TextView  android:id="@+id/errortextPromo"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_marginLeft="5dp"
+               android:gravity="left"
+               android:textColor="#e51521"
+               android:text="@string/noitem_cartegories"/>
+    
+	   <GridView 
+		    android:id="@+id/gridViewhomepageitems"
+		    android:numColumns="2"
+		    android:gravity="center"
+		    android:columnWidth="100dp"
+		    android:stretchMode="columnWidth"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:horizontalSpacing="10dp"
+	        android:verticalSpacing="10dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp" 
+	        android:layout_marginTop="10dp"
+	        android:listSelector="@android:color/transparent">
+		</GridView>
+    
+
+</LinearLayout>

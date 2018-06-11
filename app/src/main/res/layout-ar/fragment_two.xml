@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent" 
+   android:orientation="vertical">
+   
+    <LinearLayout
+        android:id="@+id/mylayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+<!-- 
+        <com.edmodo.rangebar.RangeBar
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rangebar1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            custom:tickCount="7" /> -->
+    </LinearLayout>
+    
+   
+	<GridView 
+	    android:id="@+id/gridViewcategories"
+	    android:numColumns="2"
+	    android:gravity="center"
+	    android:columnWidth="100dp"
+	    android:stretchMode="columnWidth"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:horizontalSpacing="10dp"    
+        android:verticalSpacing="10dp"
+        android:rotationY="180">
+	
+	</GridView>
+</LinearLayout>

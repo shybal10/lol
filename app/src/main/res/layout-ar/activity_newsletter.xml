@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newsletterrellay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/tableRow1header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dairam_header2"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/buttonbacknewsletterInvible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:background="@drawable/back_arrowar" />
+
+        <TextView
+            android:id="@+id/textViewbacknewsletter"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/newslettersignup"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textDirection="rtl"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/buttonbacknewsletter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/back_arrowar" />
+    </LinearLayout>
+    
+<!-- <TableRow
+        android:id="@+id/tableRow1header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical|right"
+        android:background="@drawable/dairam_header2" >
+        
+        <TextView
+            android:id="@+id/textViewbacknewsletter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/termsandconditions"
+            android:textColor="#fff"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/buttonbacknewsletter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrowar" 
+            android:layout_marginRight="3dp"/>
+
+
+    </TableRow> -->
+    <ImageView
+        android:id="@+id/imageViewtopheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paperplane_ar"
+        android:scaleType="fitStart"/>
+
+    
+    <ScrollView android:id="@+id/scroll"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/linlay"
+            android:layout_width="fill_parent"
+            android:layout_height="244dp"
+            android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1emailnewsletter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/emailsignup"
+        android:padding="10dp"
+         android:textDirection="rtl"
+        android:gravity="right|center_vertical"
+        android:background="@drawable/edittext_small" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#f6f7f9"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/buttonsubmitnewsletter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/subscribe_ar"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </TableRow>
+    </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newsletterrellay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout
+        android:id="@+id/tableRow1header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dairam_header2" >
+
+        <Button
+            android:id="@+id/buttonbacknewsletter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" 
+            android:layout_gravity="left|center_vertical"                       
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/textViewbacknewsletter"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:textDirection="ltr"
+            android:typeface="serif"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/newslettersignup"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff" />
+        
+        <Button
+            android:id="@+id/buttonbacknewsletterInvisble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="right|center_vertical"                       
+            android:background="@drawable/back_arrow" />
+
+    </LinearLayout>
+    
+<!-- <TableRow
+        android:id="@+id/tableRow1header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dairam_header2"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/buttonbacknewsletter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/textViewbacknewsletter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEWSLETTER"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </TableRow> -->
+    
+    <ImageView
+        android:id="@+id/imageViewtopheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paperplane"
+        android:scaleType="fitStart"/>
+
+        <RelativeLayout
+            android:id="@+id/linlay"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1emailnewsletter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/emailsignup"
+        android:paddingLeft="5dp"
+       android:paddingRight="1dp"
+        android:background="@drawable/edittext_small" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#f6f7f9"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/buttonsubmitnewsletter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signupbtn"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </TableRow>
+    </RelativeLayout>
+ 
+
+</LinearLayout>

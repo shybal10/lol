@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFF" >
+    
+    <!-- android:background="@android:color/transparent" -->
+
+    <!-- <RelativeLayout
+        android:id="@+id/fullimage_lyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/white_bg_popup"
+        android:gravity="center" > -->
+
+        <!-- <ScrollView
+            android:id="@+id/scrolhorilay1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" > -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linlay1socailmedis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                	android:gravity="left"
+                	android:layout_gravity="center_vertical"
+                	android:orientation="horizontal"  >
+
+                    <Button
+                        android:id="@+id/facebookbtnsocial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                    	android:layout_gravity="center_vertical"
+                   		android:layout_marginLeft="15dp"
+                        android:background="@drawable/fb_icon_58x58" />
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                   		android:layout_gravity="center_vertical"
+                    	android:layout_marginLeft="10dp"
+                    	android:textSize="20dp"
+                        android:text="@string/facebook"
+                    	android:textColor="@color/gray_menu"/>
+                </LinearLayout>
+                
+	            <View
+	                android:id="@+id/seperateviewshare1"
+	                android:layout_width="match_parent"
+	                android:layout_height="2dp"
+	                android:layout_marginTop="3dp"
+	              	android:layout_weight="1"
+	                android:background="@drawable/line">           
+	            </View>
+
+                <LinearLayout
+                    android:id="@+id/linlay1socailmedia2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                	android:layout_gravity="center_vertical"
+               	 	android:gravity="center_vertical|left"
+                	android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/twitterbtnsocial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                    	android:layout_gravity="center_vertical"
+                   		android:layout_marginLeft="15dp"
+                        android:background="@drawable/twtr_icon_58x58" />
+
+                    <TextView
+                        android:id="@+id/textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                   		android:layout_gravity="center_vertical"
+                    	android:layout_marginLeft="10dp"
+                    	android:textSize="20dp"
+                        android:text="@string/twitter"
+                    	android:textColor="@color/gray_menu"/>
+                </LinearLayout>
+                
+                <View
+	                android:id="@+id/seperateviewshare2"
+	                android:layout_width="match_parent"
+	                android:layout_height="2dp"
+	                android:layout_marginTop="3dp"
+	              	android:layout_weight="1"
+	                android:background="@drawable/line">           
+	            </View>
+
+                <LinearLayout
+                    android:id="@+id/linlay1socailmedia3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                	android:layout_gravity="center_vertical"
+                	android:gravity="center_vertical|left"
+               		android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/instagrambtnsocial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                    	android:layout_gravity="center_vertical"
+                   		android:layout_marginLeft="15dp"
+                        android:background="@drawable/instgrm_icon_58x58" />
+
+                    <TextView
+                        android:id="@+id/textview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                   		android:layout_gravity="center_vertical"
+                    	android:layout_marginLeft="10dp"
+                    	android:textSize="20dp"
+                        android:text="@string/instagram"
+                    	android:textColor="@color/gray_menu" />
+                </LinearLayout>
+                <View
+	                android:id="@+id/seperateviewshare3"
+	                android:layout_width="match_parent"
+	                android:layout_height="2dp"
+	                android:layout_marginTop="3dp"
+	              	android:layout_weight="1"
+	                android:background="@drawable/line">           
+	            </View>
+
+                <LinearLayout
+                    android:id="@+id/linlay1socailmedia4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                	android:layout_gravity="center_vertical"
+                	android:gravity="center_vertical|left"
+                	android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/pinterestbtnsocial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                    	android:layout_gravity="center_vertical"
+                   		android:layout_marginLeft="15dp"
+                        android:background="@drawable/pinterest58x58" />
+
+                    <TextView
+                        android:id="@+id/textview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                   		android:layout_gravity="center_vertical"
+                    	android:layout_marginLeft="10dp"
+                    	android:textSize="20dp"
+                        android:text="@string/pinterest"
+                    	android:textColor="@color/gray_menu"/>
+                </LinearLayout>
+                <View
+	                android:id="@+id/seperateviewshare4"
+	                android:layout_width="match_parent"
+	                android:layout_height="2dp"
+	                android:layout_marginTop="3dp"
+	              	android:layout_weight="1"
+	                android:background="@drawable/line">           
+	            </View>
+
+                <LinearLayout
+                    android:id="@+id/linlay1socailmedia5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                	android:layout_gravity="center_vertical"
+                	android:gravity="center_vertical|left"
+                	android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/gplusbtnsocial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                    	android:layout_gravity="center_vertical"
+                   		android:layout_marginLeft="15dp"
+                        android:background="@drawable/gplus" />
+
+                    <TextView
+                        android:id="@+id/textview5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                   		android:layout_gravity="center_vertical"
+                    	android:layout_marginLeft="10dp"
+                    	android:textSize="20dp"
+                        android:text="@string/gplus"
+                    	android:textColor="@color/gray_menu" />
+                </LinearLayout>
+            </LinearLayout>
+
+        <!-- </ScrollView> -->
+   <!--  </RelativeLayout> -->
+<!-- 
+    <ImageView
+        android:id="@+id/close_btn_dialog_social"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close_btn2_popup" /> -->
+
+</RelativeLayout>

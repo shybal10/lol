@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linlayeditinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dairam_header2" >
+
+        <Button
+            android:id="@+id/buttonbackeditinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" 
+            android:layout_gravity="left|center_vertical"                       
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/textViewbackeditinfo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:textDirection="ltr"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/myaccountheader"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff" />
+        
+        <Button
+            android:id="@+id/buttonbackeditinfoInvisble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="right|center_vertical"                       
+            android:background="@drawable/back_arrow" />
+
+    </LinearLayout>
+    
+    <!-- <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/dairam_header2" >
+
+        <Button
+            android:id="@+id/buttonbackeditinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/textViewbackeditinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/myaccountheader"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow> -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editinfoheading"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#a5a7aa"
+        android:visibility="visible"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editTextfirstnameeditinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edittext_small"
+                android:layout_weight="1"
+                android:ems="10" 
+                android:hint="First name"
+                android:paddingLeft="10dp">
+
+                <requestFocus />
+            </EditText>
+            
+             <EditText
+                android:id="@+id/editTextlastnameeditinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" 
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edittext_small"
+                android:layout_weight="1"
+                android:hint="Last name"
+                android:paddingLeft="10dp">
+
+                <requestFocus />
+            </EditText>
+
+             <EditText
+                 android:id="@+id/editTextemaileditinfo"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textEmailAddress"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:background="@drawable/edittext_small" 
+                 android:layout_weight="1"
+                 android:hint="E-mail"
+                 android:paddingLeft="10dp"/>
+              <EditText
+                 android:id="@+id/editTexttelephoneeditinfo"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:background="@drawable/edittext_small" 
+                 android:layout_weight="1"
+                 android:maxLength="13"
+                 android:inputType="phone"
+                 android:hint="@string/telephone"
+                 android:paddingLeft="10dp"/>
+
+             <EditText
+                 android:id="@+id/editTextpasswordeditinfo"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPassword"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:background="@drawable/edittext_small" 
+                 android:layout_weight="1"
+                 android:hint="Password"
+                 android:paddingLeft="10dp"/>
+
+             <EditText
+                 android:id="@+id/editTextrepasseditinfo"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:inputType="textPassword"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:background="@drawable/edittext_small" 
+                 android:layout_weight="1"
+                 android:hint="Re-enter password"
+                 android:paddingLeft="10dp"/>
+ 
+             <TableRow
+                 android:id="@+id/tableRow2"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent" 
+                 android:layout_marginTop="25dp"
+                 android:gravity="center"
+                 android:layout_weight="1"
+                 android:background="#f6f7f9">
+                
+	               <Button
+	                 android:id="@+id/buttonsaveeditinfo"
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_marginTop="10dp"
+	                 android:layout_marginBottom="10dp"
+	                 android:background="@drawable/save_btn">
+	               </Button>
+             </TableRow>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

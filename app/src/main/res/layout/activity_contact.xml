@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dairam_header2" >
+
+        <Button
+            android:id="@+id/buttonbackcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" 
+            android:layout_gravity="left|center_vertical"                       
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/textViewbackcontact"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:textDirection="ltr"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/contact"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff" />
+        
+        <Button
+            android:id="@+id/buttonbackcontactInvisble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="right|center_vertical"                       
+            android:background="@drawable/back_arrow" />
+
+    </LinearLayout>
+    
+<!-- <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dairam_header2"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/buttonbackcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/textViewbackcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp" />
+    </TableRow> -->
+    <ImageView
+        android:id="@+id/imageViewtopheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mailicon"
+        android:scaleType="fitStart"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contactintro"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:typeface="serif"></TextView>
+            
+            <View android:id="@+id/dividerview"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="20dp"
+                  android:background="@drawable/dividergray"/>
+            
+            <LinearLayout android:id="@+id/linlay"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center_vertical"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P.O.Box 36188, rass 24752, Kuwait " 
+                    android:textColor="#000"/>
+
+                <!-- <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+965 222 51546 "
+                    android:textColor="#000" /> -->
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+965 22970349"
+                    android:textColor="#000"/>
+                <!-- android:text="+965 22251546 " -->
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="info@dairam.com"
+                    android:textColor="#000" />
+
+
+                
+                
+            </LinearLayout>
+            <View android:layout_width="fill_parent"
+                  android:layout_height="1dp"
+                  android:background="@drawable/dividergray"
+                  android:layout_marginBottom="20dp" />
+            <LinearLayout android:id="@id/linlay"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:orientation="vertical">
+                
+               
+           			 <EditText android:id="@+id/edittextnamecc" 
+           			     	   android:layout_width="fill_parent" 
+           			     	   android:layout_height="fill_parent" 
+           			     	   android:layout_marginLeft="5dp" 
+           			     	   android:layout_marginRight="5dp" 
+           			     	   android:layout_marginTop="5dp" 
+           			     	   android:ems="10" 
+           			     	   android:gravity="left|center" 
+           			     	   android:hint="Name" 
+           			     	   android:paddingLeft="7dp"
+           			     	   android:background="@drawable/edittext_small">
+                    <requestFocus />
+                   </EditText>
+
+           			 <EditText
+           			     android:id="@+id/editTextphonecc"
+           			     android:layout_width="match_parent"
+           			     android:layout_height="wrap_content"
+           			     android:ems="10"
+           			     android:layout_marginLeft="5dp"
+           			     android:layout_marginRight="5dp"
+           			     android:layout_marginTop="5dp"
+           			     android:paddingLeft="7dp"
+           			     android:hint="phone"
+           			     android:maxLength="12"
+           			     android:gravity="left|center" 
+           			     android:inputType="phone" 
+           			     android:background="@drawable/edittext_small"/>
+
+           			 <EditText
+           			     android:id="@+id/editTextemailcc"
+           			     android:layout_width="match_parent"
+           			     android:layout_height="wrap_content"
+           			     android:layout_marginLeft="5dp"
+           			     android:layout_marginRight="5dp"
+           			     android:layout_marginTop="5dp"
+           			     android:paddingLeft="7dp"
+           			     android:ems="10"
+           			     android:gravity="left|center" 
+           			     android:hint="Email"
+           			     android:inputType="textEmailAddress"
+           			     android:background="@drawable/edittext_small" />
+
+           			 <Spinner
+           			     android:id="@+id/spinnersubjectcc"
+           			     android:layout_width="match_parent"
+           			     android:layout_height="wrap_content"
+           			     android:layout_marginLeft="5dp"
+           			     android:layout_marginRight="5dp"
+           			     android:layout_marginTop="5dp"
+           			     android:paddingLeft="7dp" 
+           			     android:background="@drawable/spinner"
+           			     android:entries="@array/contact_arrays"
+           			     android:textDirection="rtl"
+           			     android:spinnerMode="dropdown"
+           			     android:gravity="right|center_vertical"
+           			     android:prompt="@string/prompt"/>
+
+           			 <EditText
+           			     android:id="@+id/editTextmessagecc"
+           			     android:layout_width="match_parent"
+           			     android:layout_height="100dp"
+           			     android:layout_marginLeft="5dp"
+           			     android:layout_marginRight="5dp"
+           			     android:layout_marginTop="5dp"
+           			     android:paddingLeft="7dp"
+           			     android:ems="10"
+           			     android:hint="Your message..."
+           			     android:gravity="left|center|top" 
+           			     android:paddingRight="7dp"
+           			     android:inputType="textMultiLine"
+           			      />
+                
+             </LinearLayout>
+      <LinearLayout  android:id="@+id/linlaybtnbtm"
+          			 android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_marginTop="20dp"
+                     android:gravity="center"
+                     android:background="#f6f7f9">
+           			 
+           			 <Button android:id="@+id/buttonsubmitcustomercare"
+           			         android:layout_width="wrap_content"
+           			         android:layout_height="wrap_content"
+           			         android:background="@drawable/sendmsg_btn"
+           			         android:layout_marginTop="10dp"
+           			         android:layout_marginBottom="10dp"/>
+          
+      </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

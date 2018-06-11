@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayoutheaderbrand"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dairam_header2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+       <!--  <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp" > -->
+            
+            <Button
+            android:id="@+id/buttonbackhomecartInvible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:background="@drawable/back_arrowar" />
+            
+            <TextView
+                android:id="@+id/textviewheadercart"
+	            android:layout_width="0dp"
+	            android:layout_height="80dp"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal|center_vertical"
+                android:text="سلة التسوق"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff" 
+            	android:textSize="25sp"/>
+            
+            <Button
+                android:id="@+id/buttonbackhomecart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/back_arrowar" />
+
+       <!--  </RelativeLayout> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rellaycartlistView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:orientation="vertical">>
+
+        <ListView
+            android:id="@+id/listView1cartitem"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:entries="@array/More" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/rellayCartTot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listView1cartitem"
+            android:layout_marginTop="10dp"
+            android:background="#dadbdc"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/buttoncheckoutcart"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/checkout_ar_btn"
+                android:gravity="center_horizontal"
+                android:nextFocusUp="@+id/textviewtotalprice" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="@string/ordertotal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ff0000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewerrror"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/noitem_cart"
+        android:textColor="#e51521"
+        android:textSize="20sp" />
+
+</LinearLayout>

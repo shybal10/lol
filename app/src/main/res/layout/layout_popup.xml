@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:id="@+id/popups"
+   android:layout_height="wrap_content"
+   android:orientation="vertical"
+   android:background="@android:color/transparent" >
+
+    <!-- <Button
+        android:id="@+id/buttonstandardorder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_weight="1"
+        android:background="@drawable/standard_order" />
+    <View android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider"/> -->
+   
+    <Button
+        android:id="@+id/button2sortbynewest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sortlistnewest"/>
+     <!-- android:background="@drawable/sortbynewest" -->
+     
+	 <View android:layout_width="fill_parent"
+	            android:layout_height="1dp"
+	              android:background="@drawable/divider"/>
+    <Button
+        android:id="@+id/button3sortbypopularity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"   
+        android:background="@drawable/sortlistpouplar" />
+    
+     <!-- android:background="@drawable/sortbypopularity -->
+    
+     <!-- <View android:layout_width="fill_parent"
+            android:layout_height="1dp"
+              android:background="@drawable/divider"/>
+
+    <Button
+        android:id="@+id/button4random"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/sortbyrandom" /> -->
+ 
+</LinearLayout>

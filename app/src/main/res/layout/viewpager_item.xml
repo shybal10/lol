@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="7dp" >
+
+    <ImageView
+        android:id="@+id/flag1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/border_img"
+        android:padding="2dp"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/flag2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/flag1"
+        android:layout_marginLeft="10dp"
+        android:padding="2dp"
+        android:background="@drawable/border_img"
+        android:layout_toRightOf="@+id/flag1" />
+
+    <ImageView
+        android:id="@+id/flag3"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignTop="@+id/flag2"
+        android:layout_marginLeft="10dp"
+        android:padding="2dp"
+        android:background="@drawable/border_img"
+        android:layout_toRightOf="@+id/flag2" />
+
+    <RelativeLayout
+        android:id="@+id/rellay1viewpager"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/flag1"
+        android:layout_alignTop="@+id/flag1"
+        android:background="@drawable/red_trans_box"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/detail1viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_icondet" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellay2viewpager"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/flag2"
+        android:layout_alignTop="@+id/flag2"
+        android:background="@drawable/red_trans_box"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/detail2viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_icondet" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellay3viewpager"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/flag3"
+        android:layout_alignTop="@+id/flag3"
+        android:background="@drawable/red_trans_box"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/detail3viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_icondet" />
+    </RelativeLayout>
+
+</RelativeLayout>

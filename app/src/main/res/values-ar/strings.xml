@@ -1,0 +1,115 @@
+<resources>
+    <string name="facebook_app_id">231104557449360</string>
+    <string name="loginstring">تسجيل الدخول</string>
+    <string name="login"> تسجيل الدخول إلى حسابك</string>
+    <string name="password">كلمة المرور</string>
+    <!-- <string name="forgetlogin">نسيت اسم المستخدم أو كلمة المرور</string> -->
+    <string name="forgetlogin">نسيت اسم المستخدم أو كلمة المرور</string>
+    <string name="myaccountheader">ملفي الشخصي</string>
+    <string name="myaccoutnedit">تعديل بيانات الحساب </string>
+    <string name="myaccoutnorders">طلباتي</string>
+    <string name="myaccountaddressbook">دفتر العناوين </string>
+    <string name="adressbookheader">دفتر العناوين</string>
+    <string name="editinfoheading">تعديل بيانات الحساب </string>
+
+    <string name="rating_title">تقييم البرنامج</string>
+    <string name="rating_msg">الرجاء تقييم البرنامج في سوق جوجل</string>
+
+    <!-- <string name="termsandconditions">الأحكام والشروط</string> -->
+    <string name="termsandconditions">الشروط والأحكام </string>
+    <string name="shippingpolicy">سياسة الشحن</string>
+    <string name="editaddressbook">دفتر العناوين تحرير</string>
+    <string name="contactintro">إذا كان لديكم أي تساؤلات ، تعليقات ، أو ترغبون في البقاء على تواصل ، فقط قم بتعبئة النموذج أدناه وسيسرنا التواصل معكم.</string>
+    <string name="contact">الاتصال</string>
+    <string name="emailsignup">ادخل عنوان البريد الإلكتروني</string>
+    <string name="address1">عنوان 1</string>
+    <string name="mobilenumber">رقم الموبيل </string>
+    <string name="pincode_opt">الرمز البريدي(اختياري)</string>
+    <string name="address2_opt">عنوان 2</string>
+
+    <!-- <string name="discountcode">ادخل هنا كود التخفيض</string> -->
+    <string name="discountcode">ادخل رمز الكوبون </string>
+    <string name="ordertotal"> مجموع الطلب :</string>
+
+    <!-- <string name="styles">أسلوب</string> -->
+    <string name="styles">ستايل</string>
+    <string name="register"> تسجيل </string>
+
+    <string-array name="More">
+        <item>اللغة</item>
+        <item>الدولة</item>
+        <item>حسابي</item>
+        <item>التواصل الاجتماعي</item>
+        <item>ابقى على تواصل</item>
+        <item>سياسة الشحن</item>
+        <item>الشروط والأحكام</item>
+        <item>اتصل بنا</item>
+    </string-array>
+    <string-array name="contact_arrays">
+        <item>معلومات عامة</item>
+        <item>حالة الطلب</item>
+        <item>مشاكل مع طلبي</item>
+        <item>حسابي</item>
+        <item>استفسارات الجملة</item>
+        <item>الموقع / الاستفسارات الفنية </item>
+        <item> آخرون</item>
+    </string-array>
+
+    <string name="firstname">الاسم الأول</string>
+    <string name="lastname">الاسم الاخير</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="telephone">الهاتف</string>
+    <string name="reenter">إعادة إدخال كلمة المرور</string>
+    <string name="noitem_wishlist">لم  تقم بإضافة أي منتجات إلى المفضلة</string>
+    <string name="noitem_cart">لم تقم بإضافة أي منتجات إلى سلة التسوق </string>
+    <!-- <string name = "noitem_cartegories ">توجد المنتجات المتاحة في هذه الفئة الآن، يرجى العودة قريبا لفحص بنود جديدة</string> -->
+    <string name="noitem_cartegories">لا تتوفر منتجات ضمن هذا القسم حالياً، يرجى العودة لاحقاً لمنتجات جديدة  </string>
+    <string name="Woman">النساء</string>
+    <string name="Woman_Sale">لها  </string>
+    <string name="Man">الرجال</string>
+    <string name="Man_Sale">له </string>
+    <string name="Kids">أطفال</string>
+    <string name="Kids_Sale">للاطفال  </string>
+    <string name="sale">الخصومات</string>
+ <!-- بيع -->
+
+    <string name="agree_terms">أوافق على البنود والشروط</string>
+    <string name="facebook"> الفيسبوك </string>
+    <string name="twitter"> تويتر </string>
+    <string name="instagram"> إينستاجرام </string>
+    <string name="pinterest"> بينتيريست </string>
+    <string name="gplus"> جوجل +</string>
+    <string name="delivery_details">يرجى إدخال تفاصيل تسليم المنتج الخاص بك</string>
+    <string name="checkout">إتمام عملية الشراء          
+</string>
+    <string name="promptcountry">الدولة</string>
+    <string name="promptcity">المدينة</string>
+    <string name="cartsubtotal"> المجموع الكلي :</string>
+    <string name="specialpromodisc"> خصم خاص :</string>
+    <string name="error_in_additem">خطأ في إضافة المنتج </string>
+    <string name="fill_all_fields">يرجى تعبئة جميع الحقول  </string>
+    <string name="enter_valid_phone">ادخل رقم هاتف صحيح</string>
+    <string name="enter_valid_email">ادخل بريد الكتروني صحيح </string>
+    <string name="enter_valid_uname">يرجى ادخال بريد الكتروني صحيح في اسم المستخدم </string>
+    <string name="login_failed">فشل في تسجيل الدخولم </string>
+    <string name="must_login">يجب عليك تسجيل الدخول  </string>
+    <string name="item_added_wishlist">تم إضافة المنتج إلى المفضلة  </string>
+    <string name="required_shipping_address">يرجى ادخال عنوان الشحن</string>
+    <string name="password_mismatch">عدم تطابق في كلمة المرور </string>
+    <string name="accept_terms">يرجى الموافقة على الشروط والأحكام </string>
+    <string name="knetpayment">ى نت دفع</string>
+    <string name="registerheader">تسجيل مستخدم جديد</string>
+    
+    <string name="no_response">No Response from Server. Please Try again</string>
+    <string name="no_response_currency">Not get the Currencies from Server. Default is KD</string>
+    <string name="no_countries">No Countries available. Please Try again</string>
+    <string name="no_zones">No Zones available. Please Try again</string>
+    
+    <string name="newslettersignup">ابقى على تواصل</string>    
+    
+    <string name="readterms">يرجى قراءة الشروط والاحكام</string>
+
+
+    <string name="price_">السعر</string>
+
+</resources>

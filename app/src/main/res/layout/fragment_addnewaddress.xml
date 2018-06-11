@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linlayaddnew"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dairam_header2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonbackeditinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/textViewbackeditinfo"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/myaccountheader"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textDirection="ltr" />
+
+        <Button
+            android:id="@+id/buttonbackeditinfoInvisble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/back_arrow"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/editaddressbook"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#a5a7aa"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editTextadress1addnew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_small"
+                android:ems="10"
+                android:hint="@string/address1"
+                android:paddingLeft="10dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/editTextadress2addnew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_small"
+                android:ems="10"
+                android:hint="@string/address2_opt"
+                android:paddingLeft="10dp" >
+
+            </EditText>
+            <EditText
+                android:id="@+id/txtMobileNumberAddAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_small"
+                android:ems="10"
+                android:hint="@string/mobilenumber"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/editTextadress3addnew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_small"
+                android:ems="10"
+                android:hint="@string/pincode_opt"
+                android:inputType="number"
+                android:maxLength="8"
+                android:paddingLeft="10dp" />
+
+            <Spinner
+                android:id="@+id/spincountryadnew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="7dp"
+                android:prompt="@string/promptcountry"
+                android:textDirection="rtl" />
+
+            <Spinner
+                android:id="@+id/spinzoneadnew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="7dp"
+                android:prompt="@string/promptcity"
+                android:textDirection="rtl" />
+            <!--
+     		<EditText
+                 android:id="@+id/editTextadress4addnew"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:background="@drawable/edittext_small" 
+                 android:layout_weight="1"
+                 android:hint="@string/address4"
+                 android:paddingLeft="10dp"/>
+
+             <EditText
+                 android:id="@+id/editTextadress5addnew"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:ems="10"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:background="@drawable/edittext_small" 
+                 android:layout_weight="1"
+                 android:hint="@string/address5"
+                 android:paddingLeft="10dp"/>
+            -->
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:background="#f6f7f9"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/buttonsaveaddnew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/save_btn" >
+                </Button>
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/textViewspincust"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="left"
+        android:text=""
+   		android:paddingLeft="7dp"
+        android:textDirection="ltr"
+        android:visibility="visible"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+

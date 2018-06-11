@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addresslinlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+  <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dairam_header2" >
+
+        <Button
+            android:id="@+id/buttonbackaddressbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left|center_vertical"    
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/textViewbackadressbook"
+            android:layout_height="80dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textDirection="ltr"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/myaccountheader"
+            android:textColor="#fff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <Button
+            android:id="@+id/buttonbackaddressbookInvisble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:visibility="invisible"
+            android:layout_gravity="right|center_vertical"    
+            android:background="@drawable/back_arrow" />
+
+    </LinearLayout>
+    <TableRow android:layout_height="wrap_content"
+              android:layout_width="fill_parent"
+              android:layout_marginTop="5dp">
+         <TextView android:id="@+id/Headeraddressbook"
+                   android:layout_height="wrap_content"
+                   android:layout_width="fill_parent"
+                   android:text="@string/adressbookheader"
+                   android:gravity="center"
+                   android:visibility="visible"
+                   android:textColor="#000"
+                   android:textSize="20sp"/>
+    </TableRow>
+
+ <RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/listViewaddressbook"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_New"
+        android:divider="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="@android:color/transparent" >
+    </ListView>
+
+    <TableRow
+        android:id="@+id/btn_New"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        
+                 <Button android:id="@+id/buttonaddressbook"
+                         android:layout_width="wrap_content"
+       					 android:layout_height="wrap_content" 
+       					 android:layout_marginTop="10dp"
+       					 android:layout_marginBottom="10dp"
+       					 android:background="@drawable/addnew_btn"/>
+        </TableRow>
+</RelativeLayout>
+</LinearLayout>

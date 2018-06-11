@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/tableRow1back"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dairam_header2"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/buttonbackregisterInvible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:background="@drawable/back_arrowar" />
+
+        <TextView
+            android:id="@+id/textViewbackcheckout"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/checkout"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textDirection="rtl"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/buttonbackregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/back_arrowar" />
+    </LinearLayout>
+   
+
+    <!-- <TableRow
+        android:id="@+id/tableRow1back"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dairam_header2"
+        android:gravity="center_vertical|right" >
+         
+         <TextView
+            android:id="@+id/textViewbackcheckout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkout"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textSize="20sp" 
+            android:layout_marginRight="5dp"/>  
+             <Button
+            android:id="@+id/buttonbackregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrowar"
+            />     
+  </TableRow> -->
+     <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+  
+         <LinearLayout
+             
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+  <ImageView
+        android:id="@+id/imageViewtopheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/checkout_heading2"
+        android:scaleType="fitStart"
+        />
+  <TextView android:id="@+id/txtpaymethod"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_marginTop="10dp"           
+           android:layout_marginBottom="10dp"
+           android:textDirection="rtl"
+           android:text="يرجى اختيار طريقة الدفع المناسبة لاتمام هذه العملية "/>
+ <HorizontalScrollView
+    android:id="@+id/hsv"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:fillViewport="true"
+    android:measureAllChildren="false"
+    android:scrollbars="none" >
+
+<LinearLayout
+             android:id="@+id/layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <Button
+                android:id="@+id/butt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+				android:background="@drawable/bub_5"/>
+            <Button
+                android:id="@+id/butt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10dp"  
+				android:background="@drawable/bub_4"/>
+            <Button
+                android:id="@+id/buttonc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10dp" 
+				android:background="@drawable/bub_3"/>
+            <Button
+                android:id="@+id/buttonc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10dp"                
+				android:background="@drawable/bub_2_sel"/>            
+            <Button
+                android:id="@+id/buttoncart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10dp" 
+                android:layout_marginRight="10dp" 
+				android:background="@drawable/bub_1"/>          
+            
+              
+</LinearLayout>
+</HorizontalScrollView>
+   
+
+ <!-- <TextView android:id="@+id/dkfj"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:textDirection="rtl"
+           android:layout_marginTop="30dp"
+           android:text="سوف يتم إضافة 2ك"/> -->     
+         
+          
+       
+          <TableRow
+	            android:id="@+id/tableRowsubmit"
+	            android:layout_width="fill_parent"
+	            android:layout_height="100dp"
+	            android:layout_marginTop="25dp"
+	            android:gravity="center"
+	            android:background="#F6F7F9">
+                
+                 <Button android:id="@+id/buttonnext"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/continuation_btn"/>
+                 </TableRow>
+   
+  </LinearLayout>
+  </ScrollView>
+
+    
+</LinearLayout>

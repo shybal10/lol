@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dairam_header2"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/buttonbackcontactInvisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:background="@drawable/back_arrowar" />
+
+        <TextView
+            android:id="@+id/textViewbackcontact"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/myaccountheader"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textDirection="rtl"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/buttonbackcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/back_arrowar" />
+    </LinearLayout>
+    
+    <!-- <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical|right"
+        android:background="@drawable/dairam_header2" >
+        
+        <TextView
+            android:id="@+id/textViewbackcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact"
+            android:textColor="#fff"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/buttonbackcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrowar" 
+            android:layout_marginRight="3dp"/>
+
+
+    </TableRow> -->
+
+    <ImageView
+        android:id="@+id/imageViewtopheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mailicon_ar"
+        android:scaleType="fitStart"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contactintro"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:typeface="serif"></TextView>
+            
+            <View android:id="@+id/dividerview"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="20dp"
+                  android:background="@drawable/dividergray"/>
+            
+            <LinearLayout android:id="@+id/linlay"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center_vertical"
+                          android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:gravity="right|center_vertical"
+                    android:textColor="#000"
+                    android:layout_marginRight="5dp"
+                    android:text="P.O.Box 36188, rass 24752, Kuwait " />
+
+                <!-- <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:gravity="right|center_vertical"
+                    android:textColor="#000"
+                    android:layout_marginRight="5dp"
+                    android:text="+965 222 51546 " /> -->
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:textColor="#000"
+                    android:layout_marginRight="5dp"
+                    android:text="+965 22970349"
+                    android:gravity="right|center_vertical"/>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:textColor="#000"
+                    android:layout_marginRight="5dp"
+                     android:text="info@dairam.com"
+                    android:gravity="right|center_vertical" />
+
+                
+            </LinearLayout>
+            <View android:layout_width="fill_parent"
+                  android:layout_height="1dp"
+                  android:background="@drawable/dividergray"
+                  android:layout_marginBottom="20dp" />
+            <LinearLayout android:id="@id/linlay"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:orientation="vertical">
+                
+               
+           			 <EditText android:id="@+id/edittextnamecc" 
+           			     	   android:layout_width="fill_parent" 
+           			     	   android:layout_height="fill_parent" 
+           			     	   android:layout_marginLeft="5dp" 
+           			     	   android:layout_marginRight="5dp" 
+           			     	   android:layout_marginTop="5dp" 
+           			     	   android:ems="10" 
+           			     	   android:paddingRight="10dp"
+           			     	   android:hint="اسم" 
+           			     	   android:padding="7dp"
+           			     	   android:layoutDirection="rtl"
+           			     	   android:gravity="right|center_vertical"
+           			     	   android:background="@drawable/edittext_small">
+                    <requestFocus />
+                   </EditText>
+
+           			 <EditText
+           			     android:id="@+id/editTextphonecc"
+           			     android:layout_width="match_parent"
+           			     android:layout_height="wrap_content"
+           			     android:ems="10"
+           			     android:layout_marginLeft="5dp"
+           			     android:layout_marginRight="5dp"
+           			     android:layout_marginTop="5dp"
+           			     android:padding="7dp"
+           			     android:hint="الهاتف"
+           			     android:paddingRight="10dp"
+           			     android:inputType="phone" 
+           			     android:layoutDirection="rtl"
+           			     android:maxLength="12"
+           			     android:gravity="right|center_vertical"
+           			     android:background="@drawable/edittext_small"/>
+
+           			 <EditText
+           			     android:id="@+id/editTextemailcc"
+           			     android:layout_width="match_parent"
+           			     android:layout_height="wrap_content"
+           			     android:layout_marginLeft="5dp"
+           			     android:layout_marginRight="5dp"
+           			     android:layout_marginTop="5dp"
+           			     android:padding="7dp"
+           			     android:ems="10"
+           			     android:paddingRight="10dp"
+           			     android:hint="البريد الإلكتروني"
+           			     android:inputType="textEmailAddress"
+           			     android:layoutDirection="rtl"
+           			     android:gravity="right|center_vertical"
+           			     android:background="@drawable/edittext_small" />
+
+           			 <Spinner
+           			     android:id="@+id/spinnersubjectcc"
+           			     android:layout_width="match_parent"
+           			     android:layout_height="wrap_content"
+           			     android:layout_marginLeft="5dp"
+           			     android:layout_marginRight="5dp"
+           			     android:layout_marginTop="5dp"
+           			     android:padding="10dp" 
+           			     android:spinnerMode="dropdown"
+           			     android:background="@drawable/spinnerbg_ar"
+           			     android:entries="@array/contact_arrays"
+           			     android:prompt="@string/prompt"/>
+
+           			 <EditText
+           			     android:id="@+id/editTextmessagecc"
+           			     android:layout_width="match_parent"
+           			     android:layout_height="100dp"
+           			     android:layout_marginLeft="5dp"
+           			     android:layout_marginRight="5dp"
+           			     android:layout_marginTop="5dp"
+           			     android:paddingLeft="7dp"
+           			     android:ems="10"
+           			     android:hint="رسالتك"
+           			      android:padding="7dp"
+           			      android:paddingRight="10dp"
+           			     android:layoutDirection="rtl"
+           			     android:gravity="right|center_vertical"
+           			     android:inputType="textMultiLine"
+           			      />
+                
+             </LinearLayout>
+      <LinearLayout  android:id="@+id/linlaybtnbtm"
+          			 android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_marginTop="20dp"
+                     android:gravity="center"
+                     android:background="#f6f7f9">
+           			 
+           			 <Button android:id="@+id/buttonsubmitcustomercare"
+           			         android:layout_width="wrap_content"
+           			         android:layout_height="wrap_content"
+           			         android:background="@drawable/sendbtn_arabic"
+           			         android:layout_marginTop="10dp"
+           			         android:layout_marginBottom="10dp"/>
+          
+      </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

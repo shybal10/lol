@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF">    
+    <!-- 
+    android:background="@drawable/white_bg_popup"
+    android:background="@android:color/transparent"  -->
+
+    <!-- <RelativeLayout
+        android:id="@+id/fullimage_lyt_social"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp" 
+        android:gravity="center" > -->
+        <!--android:background="@drawable/white_bg_popup" -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linlay1socailmedissocial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="left"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"                 
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/facebookbtnsocial1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                	android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/fb_icon_58x58" />
+
+                <TextView
+                    android:id="@+id/textview1social"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:text="@string/facebook_social"
+                    android:textColor="@color/gray_menu" />
+            </LinearLayout>
+            <View
+                android:id="@+id/seperateview1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+              	android:layout_weight="1"
+                android:background="@drawable/line">           
+            </View>
+
+            <LinearLayout
+                android:id="@+id/linlay1socailmedia2social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/twitterbtnsocial1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                	android:layout_marginLeft="15dp"
+                    android:background="@drawable/twtr_icon_58x58" />
+
+                <TextView
+                    android:id="@+id/textview2social"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:text="@string/twitter_social"
+                    android:textColor="@color/gray_menu" />
+            </LinearLayout>
+            <View
+                android:id="@+id/seperateview2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+              	android:layout_weight="1"
+                android:background="@drawable/line">           
+            </View>
+
+            <LinearLayout
+                android:id="@+id/linlay1socailmedia3social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/instagrambtnsocial1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                	android:layout_marginLeft="15dp"
+                    android:background="@drawable/instgrm_icon_58x58" />
+
+                <TextView
+                    android:id="@+id/textview3social"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/instagram_social"
+                    android:textColor="@color/gray_menu"/>
+            </LinearLayout>
+            <View
+                android:id="@+id/seperateview3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+              	android:layout_weight="1"
+                android:background="@drawable/line">           
+            </View>
+
+            <LinearLayout
+                android:id="@+id/linlay1socailmedia4social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/pinterestbtnsocial1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                	android:layout_marginLeft="15dp"
+                    android:background="@drawable/pinterest58x58" />
+
+                <TextView
+                    android:id="@+id/textview4social"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/pinterest_social"
+                    android:textColor="@color/gray_menu" />
+            </LinearLayout>
+        </LinearLayout>
+    <!-- </RelativeLayout> -->
+
+
+</RelativeLayout>

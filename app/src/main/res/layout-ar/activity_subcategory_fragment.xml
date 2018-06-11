@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dairam_header2"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/buttonbackcatInvible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:background="@drawable/back_arrowar" />
+
+        <TextView
+            android:id="@+id/textViewbackcat"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textDirection="rtl"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/buttonbackcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/back_arrowar" />
+    </LinearLayout>
+    
+    <!-- <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical|right"
+        android:background="@drawable/dairam_header2" >
+        
+        <TextView
+            android:id="@+id/textViewbackcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/buttonbackcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrowar" 
+            android:layout_marginRight="5dp"/> 
+    </TableRow> -->
+    <TextView  android:id="@+id/errortext"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_marginRight="5dp"
+               android:gravity="right"
+               android:textColor="#e51521"
+			   android:text="@string/noitem_cartegories"/>
+    <ListView
+        android:id="@+id/listViewsubcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layoutDirection="rtl"
+        android:layout_gravity="right">
+    </ListView>
+
+</LinearLayout>

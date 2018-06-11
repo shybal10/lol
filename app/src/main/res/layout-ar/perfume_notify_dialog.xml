@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linlayperfumeNotif"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/close_btn_dialog_perfume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:src="@drawable/close_btn2" />
+
+    <LinearLayout
+        android:id="@+id/linlayinnerperfume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:layout_gravity="center_vertical"
+    	android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtViewPerfumeNofity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="top"
+            android:padding="10dp"
+            android:textDirection="rtl"
+            android:text="@string/success_message"
+            android:textColor="@color/gray_menu"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnNextPerfumeNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_ok_ar" />
+    </LinearLayout>
+
+</LinearLayout>
